@@ -1,0 +1,23 @@
+
+Network Protocols Detected in Wireshark Capture
+----------------------------------------------
+
+1. TCP (Transmission Control Protocol)
+   - Description: Reliable data transport protocol
+   - Common Ports: 443 (HTTPS)
+   - Usage: Establishes secure connections, seen with SYN, ACK, FIN flags
+
+2. TLSv1.2 / TLSv1.3 (Transport Layer Security)
+   - Description: Provides encryption for secure communication
+   - Common Usage: HTTPS traffic
+   - Server Names Observed (SNI):
+     - storage.live.com
+     - onedriveclucprodbn20028.blob.core.windows.net
+     - gateway.grammarly.com
+     - extension.femetrics.grammarly.io
+
+3. ARP (Address Resolution Protocol)
+   - Description: Resolves IP addresses to MAC addresses within local network
+   - Observed Requests: "Who has 192.168.0.102?"
+
+Note: All TLS traffic observed was over TCP port 443, indicating secure web communication.
